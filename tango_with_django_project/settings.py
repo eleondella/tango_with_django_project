@@ -127,3 +127,8 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 # Media files
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+
+#Ensures that login_required() decorator will redirect any user not logged in to the URL /rango/login/.
+LOGIN_URL = '/rango/login/'
+
